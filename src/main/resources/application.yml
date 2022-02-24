@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  redis:
+    database: 0
+    host: 10.19.133.122
+    port: 6379
+#    password: BLju_6107@
+    ssl: false
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://10.19.133.122:3306/convergence_cloud?useUnicode=true&characterEncoding=utf8
+    username: convergence_cloud
+    password: MIGfMA0GCSqGSIb3DQEB
+    driver-class-name: com.mysql.cj.jdbc.Driver
