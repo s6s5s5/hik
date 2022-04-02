@@ -12,7 +12,7 @@ spring:
     hibernate:
       ddl-auto: none
   datasource:
-    url: jdbc:mysql://10.19.133.122:3306/convergence_cloud?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://10.19.133.122:3306/sun?useUnicode=true&characterEncoding=utf8
     username: convergence_cloud
     password: MIGfMA0GCSqGSIb3DQEB
     driver-class-name: com.mysql.cj.jdbc.Driver
