@@ -6,9 +6,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import sun.repository.CrmLeadRepository;
 import sun.repository.Sun;
-import sun.repository.entity.CrmLead;
 
 import javax.annotation.Resource;
 
@@ -24,8 +22,8 @@ public class DemoController {
     @Autowired
     Sun sun;
 
-    @Resource
-    CrmLeadRepository crmLeadRepository;
+//    @Resource
+//    CrmLeadRepository crmLeadRepository;
 
     @Resource
     RedisTemplate redisTemplate;
@@ -40,12 +38,12 @@ public class DemoController {
     }
 
 
-    @GetMapping("/convert")
-    public CrmLead convert() {
-        CrmLead crmLead = crmLeadRepository.findById(61L).get();
-        log.info(crmLead.toString());
-        return crmLead;
-    }
+//    @GetMapping("/convert")
+//    public CrmLead convert() {
+//        CrmLead crmLead = crmLeadRepository.findById(61L).get();
+//        log.info(crmLead.toString());
+//        return crmLead;
+//    }
 
 
 }
